@@ -1,0 +1,42 @@
+Write a program to calculate perimeter and area of the rectangle implement the program using class and object(hint:area=lenght*breadth,perimeter=2*(lenght+bredth))
+Ans:
+import java.util.*;
+ class Rectangle{	
+float lenght;
+float width;
+void Area()
+{
+	float area;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Area Of the Rectangle");
+		System.out.println("Enter the lenght");
+		lenght=sc.nextFloat();
+		System.out.println("Enter the width");
+		width=sc.nextFloat();
+	area=lenght*width;
+	
+	System.out.println("Area of rectangle is:"+area);
+	
+	
+}
+
+void Perimeter()
+{
+	float perimeter;
+	System.out.println("For Calculating Perimeter");		
+	perimeter=2*(lenght+width);
+	System.out.println("Perimeter of Rectangle:"+perimeter);	
+}
+}
+class Practicle
+{
+	public static void main(String args[])
+	{
+		
+		Rectangle rect=new Rectangle();
+		rect.Area();
+		rect.Perimeter();
+	}
+}
+		
+	

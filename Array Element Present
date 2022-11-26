@@ -1,0 +1,25 @@
+3.Writ a program to accept the array element and find the entered number wheather present in array or not and print appropriate message
+ans:
+import java.util.*;
+class ArrayElement
+{
+public static void main(String[] args)
+{
+int[] num={1,2,3,4,5};
+int Find;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter the number ");
+Find=sc.nextInt();
+boolean found=false;
+for(int n:num){
+if(n==Find){
+found=true;
+break;
+}
+}
+if(found)
+System.out.println("is found:"+Find);
+else
+System.out.println("is not found:"+Find);
+}
+}
